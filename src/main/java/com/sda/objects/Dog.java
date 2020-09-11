@@ -13,7 +13,7 @@ public class Dog {
     Dog(String newDogName, int newDogWeight){
 
         if(newDogWeight <= 0 || newDogWeight > 500){
-            throw new IllegalArgumentException();
+            throw new IllegalArgumentException("Niepoprawna waga psa");
         }
 
         this.name = newDogName;
@@ -23,4 +23,7 @@ public class Dog {
     String describeDog(){
         return name + " : " + weight;
     }
+
+
+
 }
